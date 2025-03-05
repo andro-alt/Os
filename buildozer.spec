@@ -37,7 +37,9 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pynput
+#requirements = python3,kivy,pynput
+# Required Python modules
+requirements = python3, kivy, android, plyer, pynput
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -128,6 +130,8 @@ android.ndk = 23b
 
 # (str) ANT directory (if empty, it will be automatically downloaded.)
 #android.ant_path =
+# Enable Android service support
+android.service = True
 
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid excess Internet downloads or save time
