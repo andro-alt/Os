@@ -9,8 +9,6 @@ package.name = linux
 # (str) Package domain (needed for android/ios packaging)
 package.domain = com.linux.app
 
-#
-android.allow_network_access = True
 # (str) Source code where the main.py live
 source.dir = .
 
